@@ -16,8 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="Ybk-Nn-Icz">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4O-0w-9ML">
                                 <rect key="frame" x="70" y="388" width="262" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Idea Draft">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
@@ -28,6 +33,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF5-dY-yQa">
                                 <rect key="frame" x="70" y="480" width="262" height="56"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Planning">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
@@ -38,6 +44,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVk-aL-Llu">
                                 <rect key="frame" x="70" y="567" width="262" height="56"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="UI Design">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
@@ -77,7 +84,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VF5-dY-yQa" firstAttribute="top" secondItem="m4O-0w-9ML" secondAttribute="bottom" constant="36" id="08J-NX-sjw"/>
+                            <constraint firstItem="Ybk-Nn-Icz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4tf-As-2z9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m4O-0w-9ML" secondAttribute="trailing" constant="70" id="7wa-gh-foC"/>
+                            <constraint firstItem="Ybk-Nn-Icz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Pe-ME-PeU"/>
                             <constraint firstItem="DVk-aL-Llu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Bh7-8w-1KD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VF5-dY-yQa" secondAttribute="trailing" constant="70" id="DmK-6k-CdA"/>
                             <constraint firstItem="VF5-dY-yQa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="F6b-c4-MR2"/>
@@ -86,6 +95,8 @@
                             <constraint firstItem="p9M-7y-XNn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="OiM-ER-pa8"/>
                             <constraint firstItem="m4O-0w-9ML" firstAttribute="top" secondItem="p9M-7y-XNn" secondAttribute="bottom" constant="121" id="QQE-HY-Ewh"/>
                             <constraint firstItem="m4O-0w-9ML" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="WCE-5M-Bhy"/>
+                            <constraint firstAttribute="bottom" secondItem="Ybk-Nn-Icz" secondAttribute="bottom" id="ZEm-vM-VJm"/>
+                            <constraint firstItem="Ybk-Nn-Icz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rDT-aV-Lkp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p9M-7y-XNn" secondAttribute="trailing" constant="70" id="sA9-hH-Xlp"/>
                             <constraint firstItem="p9M-7y-XNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="svx-00-p2I"/>
                         </constraints>
@@ -107,9 +118,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to keep the UI simple and clean so users will have an easier time navigating the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o77-OU-BUf">
-                                <rect key="frame" x="20" y="178" width="362" height="143.33333333333337"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o77-OU-BUf">
+                                <rect key="frame" x="20" y="178" width="362" height="612.33333333333326"/>
+                                <mutableString key="text">I would like to keep the UI simple and clean so users will have an easier time navigating the app. The first screen will have a place to welcome the user back and display 3 buttons that take you to each seperate screen. The first will ahev multiple labels and text boxs that allow you to input numbers. The second screen will have a place to input the amount of calories you will or have eat and give you information based on it. The last screen will have a text box that allows you to input your current weight and will help you keep track of all weights</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -171,7 +183,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="362" id="31p-sP-oYW"/>
                                 </constraints>
-                                <string key="text">Gym buddy will help you keep track of daily workouts by teling you how many calories you've burned by allowing the user to input reps, sets, and weight for several common workouts. In addition it will also help users to keep track of total calories they have consumed in that day and their net calories. Lastly gym buddy will also help you keep tack of your weight throughout your fitness journey.</string>
+                                <string key="text">Gym buddy will help you keep track of daily workouts by telling you how many calories you've burned by allowing the user to input reps, sets, and weight for several common workouts. In addition it will also help users to keep track of total calories they have consumed in that day and their net calories. Lastly gym buddy will also help you keep tack of your weight throughout your fitness journey.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -196,7 +208,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zmi-hS-eKP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bVk-IB-IX8">
+                    <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" id="bVk-IB-IX8">
                         <rect key="frame" x="0.0" y="124" width="402" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -214,11 +226,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BG" width="408" height="612"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.38039215686274508" green="0.33333333333333331" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
