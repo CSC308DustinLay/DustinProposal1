@@ -1,24 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zmi-hS-eKP">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main Screen" id="BYZ-38-t0r" customClass="ViewController" customModule="DustinProposal1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4O-0w-9ML">
+                                <rect key="frame" x="70" y="388" width="262" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Idea Draft">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Edn-6E-wBs" kind="show" id="cNb-dr-uV0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF5-dY-yQa">
+                                <rect key="frame" x="70" y="480" width="262" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Planning">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Sxe-cQ-xdR" kind="show" id="YNg-3X-0TE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVk-aL-Llu">
+                                <rect key="frame" x="70" y="567" width="262" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="UI Design">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Yg5-uO-GCB" kind="show" id="oXG-3E-5FF"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p9M-7y-XNn">
+                                <rect key="frame" x="70" y="193" width="262" height="74"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5Z-Ik-RoN">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Dustin Lay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vw-LN-ZpO">
+                                                <rect key="frame" x="0.0" y="13" width="262" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstItem="1Vw-LN-ZpO" firstAttribute="leading" secondItem="y5Z-Ik-RoN" secondAttribute="leading" id="FT5-Km-eIg"/>
+                                            <constraint firstItem="1Vw-LN-ZpO" firstAttribute="top" secondItem="y5Z-Ik-RoN" secondAttribute="top" constant="13" id="gUo-D7-wsh"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Vw-LN-ZpO" secondAttribute="trailing" id="teX-7e-V42"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="A0p-nZ-yex"/>
+                                    <constraint firstAttribute="width" secondItem="p9M-7y-XNn" secondAttribute="height" multiplier="131:37" id="m7h-yO-l42"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VF5-dY-yQa" firstAttribute="top" secondItem="m4O-0w-9ML" secondAttribute="bottom" constant="36" id="08J-NX-sjw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m4O-0w-9ML" secondAttribute="trailing" constant="70" id="7wa-gh-foC"/>
+                            <constraint firstItem="DVk-aL-Llu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Bh7-8w-1KD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VF5-dY-yQa" secondAttribute="trailing" constant="70" id="DmK-6k-CdA"/>
+                            <constraint firstItem="VF5-dY-yQa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="F6b-c4-MR2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVk-aL-Llu" secondAttribute="trailing" constant="70" id="FFI-92-yXm"/>
+                            <constraint firstItem="DVk-aL-Llu" firstAttribute="top" secondItem="VF5-dY-yQa" secondAttribute="bottom" constant="31" id="FwK-xa-Dlv"/>
+                            <constraint firstItem="p9M-7y-XNn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="OiM-ER-pa8"/>
+                            <constraint firstItem="m4O-0w-9ML" firstAttribute="top" secondItem="p9M-7y-XNn" secondAttribute="bottom" constant="121" id="QQE-HY-Ewh"/>
+                            <constraint firstItem="m4O-0w-9ML" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="WCE-5M-Bhy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p9M-7y-XNn" secondAttribute="trailing" constant="70" id="sA9-hH-Xlp"/>
+                            <constraint firstItem="p9M-7y-XNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="svx-00-p2I"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Gym Buddy" id="F8u-dv-72t"/>
+                    <connections>
+                        <outlet property="UIView1" destination="y5Z-Ik-RoN" id="9fj-4I-Scx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1949.2537313432836" y="84.439359267734545"/>
+        </scene>
+        <!--UI Design-->
+        <scene sceneID="una-aP-rkr">
+            <objects>
+                <viewController title="UI Design" modalPresentationStyle="fullScreen" id="Yg5-uO-GCB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sz3-iM-otp">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LP1-S4-U00"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JEf-kD-F19"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2D-Uv-JfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777.6119402985073" y="525.85812356979397"/>
+        </scene>
+        <!--Planning-->
+        <scene sceneID="RTL-gn-Hau">
+            <objects>
+                <viewController title="Planning" modalPresentationStyle="fullScreen" id="Sxe-cQ-xdR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWx-3W-lCF">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bt9-9w-1JK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Icj-Wl-GnV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwn-qo-VFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3531.3432835820895" y="83.752860411899306"/>
+        </scene>
+        <!--Idea Draft-->
+        <scene sceneID="ms7-QV-TdR">
+            <objects>
+                <viewController title="Idea Draft" id="Edn-6E-wBs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e27-5f-Uh0">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr5-Je-iLX">
+                                <rect key="frame" x="20" y="178" width="362" height="573"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="362" id="31p-sP-oYW"/>
+                                </constraints>
+                                <string key="text">Gym buddy will help you keep track of daily workouts by teling you how many calories you've burned by allowing the user to input reps, sets, and weight for several common workouts. In addition it will also help users to keep track of total calories they have consumed in that day and their net calories. Lastly gym buddy will also help you keep tack of your weight throughout your fitness journey.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5JL-jc-WHR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kr5-Je-iLX" secondAttribute="trailing" constant="20" id="9eU-0H-cEw"/>
+                            <constraint firstItem="Kr5-Je-iLX" firstAttribute="top" secondItem="5JL-jc-WHR" secondAttribute="top" id="US1-oj-dVN"/>
+                            <constraint firstItem="Kr5-Je-iLX" firstAttribute="leading" secondItem="5JL-jc-WHR" secondAttribute="leading" constant="20" id="tvI-gJ-JBT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IkW-6s-QUh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lM0-WO-WXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777.6119402985073" y="-312.35697940503428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ghZ-zU-XxX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zmi-hS-eKP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bVk-IB-IX8">
+                        <rect key="frame" x="0.0" y="124" width="402" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0WE-Rd-0Mg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qx-uU-ivP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.8507462686566" y="84.439359267734545"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.38039215686274508" green="0.33333333333333331" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

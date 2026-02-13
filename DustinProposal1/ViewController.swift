@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    @IBOutlet weak var UIView1: UIView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        UIView1.layer.cornerRadius = 15
+        UIView1.clipsToBounds = true
     }
 
 
