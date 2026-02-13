@@ -106,8 +106,21 @@
                     <view key="view" contentMode="scaleToFill" id="sz3-iM-otp">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to keep the UI simple and clean so users will have an easier time navigating the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o77-OU-BUf">
+                                <rect key="frame" x="20" y="178" width="362" height="143.33333333333337"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LP1-S4-U00"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LP1-S4-U00" firstAttribute="trailing" secondItem="o77-OU-BUf" secondAttribute="trailing" constant="20" id="6o2-Ha-bFD"/>
+                            <constraint firstItem="o77-OU-BUf" firstAttribute="leading" secondItem="LP1-S4-U00" secondAttribute="leading" constant="20" id="Lh1-jG-Aw1"/>
+                            <constraint firstItem="o77-OU-BUf" firstAttribute="top" secondItem="LP1-S4-U00" secondAttribute="top" id="Nzl-VC-03H"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JEf-kD-F19"/>
                 </viewController>
@@ -122,8 +135,22 @@
                     <view key="view" contentMode="scaleToFill" id="NWx-3W-lCF">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKa-qr-wgZ">
+                                <rect key="frame" x="20" y="178" width="362" height="644.66666666666663"/>
+                                <string key="text">In the beginning I would like to have the UI design complete before trying to add any code. Then I can add code to estimate things like calories burned per exersize, total calories burned, total calories eaten that day, net calories, and lastly changes in weight either per day, week, or since you started your journey. At some point during the coding process I would need to learn how to keep information stored locally so that it can be accessed later</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bt9-9w-1JK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tKa-qr-wgZ" firstAttribute="top" secondItem="bt9-9w-1JK" secondAttribute="top" id="MYr-Gl-jnD"/>
+                            <constraint firstItem="tKa-qr-wgZ" firstAttribute="leading" secondItem="bt9-9w-1JK" secondAttribute="leading" constant="20" id="biZ-ip-jkW"/>
+                            <constraint firstItem="bt9-9w-1JK" firstAttribute="trailing" secondItem="tKa-qr-wgZ" secondAttribute="trailing" constant="20" id="jUf-xa-9og"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Icj-Wl-GnV"/>
                 </viewController>
